@@ -7043,6 +7043,20 @@ hr {
   height: 1px;
   background-color: #dde1e6; }
 
+@media (max-width: 993px) {
+  .checkbox {
+    margin-top: 24px; }
+  .radiobutton {
+    margin-top: 24px; }
+  .label-selectors {
+    margin-bottom: 18px; } }
+
+@media (max-width: 575px) {
+  .checkbox {
+    margin-top: 48px; }
+  .radiobutton {
+    margin-top: 48px; } }
+
 .main-content {
   margin-top: 64px;
   /* Hide the browser's default checkbox */
@@ -7107,8 +7121,10 @@ hr {
     background-color: #dde1e6 !important; }
   .disabled .checkmark:after {
     background-image: url(44d6a97658c00fe97e7b3ad35a031899.png) !important; }
-  .disabled .checkbox-group:hover input ~ .checkmark {
-    border: solid 1px #dde1e6 !important; }
+  .disabled .checkmark {
+    border-color: #dde1e6 !important; }
+  .disabled .radiomark {
+    border-color: #dde1e6 !important; }
 
 /* The container */
 .radio-group {
@@ -7172,3 +7188,6 @@ hr {
   height: 8px;
   border-radius: 50%;
   background: white; }
+
+.row {
+  margin-top: 61px; }

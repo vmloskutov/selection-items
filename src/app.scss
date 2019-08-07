@@ -33,6 +33,28 @@ hr {
   height: 1px;
   background-color: $silver;
 }
+
+@media (max-width: 993px) {
+  .checkbox{
+    margin-top: 24px;
+  }
+  .radiobutton{
+    margin-top: 24px;
+  }
+  .label-selectors {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .checkbox{
+    margin-top: 48px;
+  }
+  .radiobutton{
+    margin-top: 48px;
+  }
+
+}
 .main-content {
   margin-top: 64px;
   .checkbox-group {
@@ -120,8 +142,11 @@ hr {
   .checkmark:after {
     background-image: url(img/icons/disabled@3x.png) !important;
   }
-  .checkbox-group:hover input ~ .checkmark {
-    border: solid 1px $silver !important;
+  .checkmark {
+    border-color: $silver !important;
+  }
+  .radiomark {
+    border-color: $silver !important;
   }
 }
 
@@ -195,4 +220,8 @@ hr {
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+.row {
+  margin-top: 61px;
 }
