@@ -1,0 +1,198 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./scss/variables.scss";
+@import './scss/base.scss';
+$scpacer: 24px;
+
+.row-label {
+  margin-top: 73px;
+  color: $ink;
+  .label {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  .device {
+    color: $darkGray;
+    font-size: 16px;
+    line-height: 1.5;
+    .laptop {
+      margin-right: 33px;
+    }
+    .mobile {
+
+    }
+    .current {
+      color: $ink;
+      border-bottom: 2px solid $main;
+    }
+  }
+}
+.selector {
+    margin-top: -2px;
+}
+hr {
+  height: 1px;
+  background-color: $silver;
+}
+.main-content {
+  margin-top: 64px;
+  .checkbox-group {
+     font-size: 14px;
+     line-height: 1.43;
+  }
+
+  .checkbox-group {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .checkbox-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    border: solid 1px $silver;
+    background-color: $yourHighness;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .checkbox-group:hover input ~ .checkmark {
+    background-color: $white;
+    border: solid 1px $main;
+  }
+  .checkbox-group:hover {
+    color: $main;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-group input:checked ~ .checkmark {
+    //background-color: $main;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkbox-group input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox-group .checkmark:after {
+    background-repeat: no-repeat;
+    left:-1px;;
+    top:-1px;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/icons/on@3x.png);
+    background-size: contain;
+  }
+}
+
+.disabled {
+  color: $darkGray !important;
+  span {
+    background-color: $silver !important;
+  }
+  .checkmark:after {
+    background-image: url(img/icons/disabled@3x.png) !important;
+  }
+  .checkbox-group:hover input ~ .checkmark {
+    border: solid 1px $silver !important;
+  }
+}
+
+/* The container */
+.radio-group {
+  font-size: 14px;
+  line-height: 1.43;
+  color:$ink;
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 23px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radiomark {
+  border: solid 1px $navText;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: $yourHighness;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-group:hover input ~ .radiomark {
+  background-color: $white;
+  border-color: $main;
+}
+
+.radio-group:hover {
+  color: $main;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-group input:checked ~ .radiomark {
+  background-color: $main;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-group input:checked ~ .radiomark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-group .radiomark:after {
+ 	top: 33%;
+	left: 33%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}

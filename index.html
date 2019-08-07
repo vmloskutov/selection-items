@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='dist/style.css'>
+  <script src="https://kit.fontawesome.com/ce7a79b920.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row row-label">
+      <div class="col-lg-6 label justify-content-start">Элементы выбора</div>
+      <div class="col-lg-6 device justify-content-start d-flex">
+          <div class="laptop">Десктоп</div>
+          <div class="mobile current pb-3">Мобильная версия</div>
+      </div>
+    </div>
+    <hr class="selector">
+    <main>
+      <div class="row main-content">
+        <div class="col-lg-5">Элементы выбора используются при вводе данных пользователем. Чекбоксы и радобаттоны используются либо в строку либо в столбец, комбинированные сетки недопустимы. Для 2-5 пунктов лучше использовать радобаттон, для 6-30 выпадающий список, для более 30 пунктов поле ввода с подсказкой.</div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 checkbox">
+            <label class="checkbox-group">Пункт
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-group">Наведение
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-group">Выбранный
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-group disabled">Неактивный невыбранный
+              <input class="" type="checkbox" disabled>
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-group disabled">Неактивный выбранный
+              <input class="" type="checkbox" checked="checked" disabled>
+              <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col-lg-3 radiobutton">
+          <label class="radio-group">Пункт
+            <input type="radio" name="radio">
+            <span class="radiomark"></span>
+          </label>
+          <label class="radio-group">Наведение
+            <input type="radio" name="radio">
+            <span class="radiomark"></span>
+          </label>
+          <label class="radio-group">Выбранный
+            <input type="radio" name="radio" checked="checked">
+            <span class="radiomark"></span>
+          </label>
+          <label class="radio-group disabled">Неактивный невыбранный
+            <input type="radio" name="radio" disabled>
+            <span class="radiomark"></span>
+          </label>
+          <label class="radio-group disabled">Неактивный выбранный
+            <input type="radio" name="radio" checked="checked" disabled>
+            <span class="radiomark"></span>
+          </label>
+        </div>
+    </main>
+  </div>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
