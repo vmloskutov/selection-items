@@ -26,9 +26,11 @@ $scpacer: 24px;
     }
   }
 }
+
 .selector {
     margin-top: -2px;
 }
+
 hr {
   height: 1px;
   background-color: $silver;
@@ -224,4 +226,68 @@ hr {
 
 .row {
   margin-top: 61px;
+}
+
+/*Базовая обертка*/
+.droplink {
+  hr {
+    margin: 9px 12px 0 12px;
+    padding: 0;
+    height: 1px;
+    border: 0;
+  }
+  .arrow-down {
+    transform: rotate(-90deg);
+    margin-right: 12px;
+  }
+
+}
+/*Сбросим отступы*/
+.droplink ul {
+    padding: 0;
+    margin: 0;
+  }
+/*стиль кнопки*/
+.dropdown-button {
+  width: 100%;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 7, 123, 0.04), 0 8px 20px 0 rgba(0, 0, 0, 0.06);
+  display:inline-block;
+  color:$ink !important;
+  font-size:14px;
+  padding-top:10px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+  text-decoration:none;
+  cursor: pointer
+}
+/*кнопка при наведении*/
+.dropdown-button:hover {
+  //background-color: $yourHighness;
+}
+/*активное состояние кнопки*/
+//.socialbutton:active{position:relative;top:1px}
+.droplink li{
+  background-color: $white;
+  display:block
+}
+/*Стиль элемента списка*/
+.droplink li a{
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-left: 12px;
+  display:block;
+  color:$ink;
+  text-decoration: none;
+  font-size:14px;
+  line-height: 1.43;
+}
+/*Стиль элемента при наведении*/
+.droplink li a:hover {
+  border-radius: 4px;
+  background-color: $yourHighness;
+  hr {
+    background-color: $yourHighness;
+  }
 }

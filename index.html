@@ -72,11 +72,42 @@
         </div>
       </div>
       <div class="row">
-
+        <div class="col-lg-6 offset-lg-6">
+          <div class="wrapper">
+            <div class="droplink">
+                <a class=" d-flex justify-content-between dropdown-button" onclick="down()">Выпадающий список
+                <img class="arrow-down " src="src/img/icons/down.svg" alt="">
+                </a>
+              <ul id="dropdown" style="display:none">
+                 <li class=""><a href="#">Пункт 1<hr></a></li>
+                 <li class=""><a href="#">Пункт 2<hr></a></li>
+                 <li class=""><a href="#">Пункт 3<hr></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     </main>
   </div>
+  <script type="text/javascript">
+    function down()
+    {
+      let a = document.getElementById('dropdown');
+      let arrow = document.querySelector('.arrow-down');
+      if ( a.style.display == 'none' ) {
+        a.style.display = 'block'
+        arrow.style.transform = 'rotate(90deg)'
+      }
+      else
+        if ( a.style.display == 'block' ) {
+        a.style.display = 'none';
+        arrow.style.transform = 'rotate(-90deg)'
+        }
+    };
+  </script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
   <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 </html>
