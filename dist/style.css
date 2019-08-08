@@ -7056,7 +7056,9 @@ hr {
   .checkbox {
     margin-top: 48px; }
   .radiobutton {
-    margin-top: 48px; } }
+    margin-top: 48px; }
+  .row {
+    margin-top: 24px; } }
 
 .main-content {
   margin-top: 64px;
@@ -7191,7 +7193,10 @@ hr {
   background: white; }
 
 .row {
-  margin-top: 61px; }
+  margin-top: 50px; }
+
+.wrapper {
+  margin-bottom: 60px; }
 
 /*Базовая обертка*/
 .droplink hr {

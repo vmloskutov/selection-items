@@ -3,6 +3,7 @@
 @import './scss/base.scss';
 $scpacer: 24px;
 
+
 .row-label {
   margin-top: 73px;
   color: $ink;
@@ -55,7 +56,9 @@ hr {
   .radiobutton{
     margin-top: 48px;
   }
-
+  .row {
+    margin-top: 24px;
+  }
 }
 .main-content {
   margin-top: 64px;
@@ -225,9 +228,12 @@ hr {
 }
 
 .row {
-  margin-top: 61px;
+  margin-top: 50px;
 }
 
+.wrapper {
+  margin-bottom: 60px;
+}
 /*Базовая обертка*/
 .droplink {
   hr {

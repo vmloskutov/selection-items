@@ -14,7 +14,7 @@
       <div class="col-lg-6 label justify-content-start label-selectors">Элементы выбора</div>
       <div class="col-lg-6 device justify-content-start d-flex">
           <div class="laptop">Десктоп</div>
-          <div class="mobile current pb-3">Мобильная версия</div>
+          <div class="mobile pb-3">Мобильная версия</div>
       </div>
     </div>
     <hr class="selector">
@@ -91,6 +91,28 @@
     </main>
   </div>
   <script type="text/javascript">
+  let laptop = document.querySelector(".laptop");
+  let mobile = document.querySelector(".mobile");
+    window.addEventListener("load", function(event) {
+      if (window.screen.width <= 933) {
+
+        laptop.classList.remove("current");
+        mobile.classList.add("current");
+      } else {
+        laptop.classList.add("current");
+        mobile.classList.remove("current");
+      }
+    });
+    window.addEventListener('resize', function(event){
+      if (window.screen.availWidth <= 933) {
+        console.log("!!!");
+        laptop.classList.remove("current");
+        mobile.classList.add("current");
+      } else {
+        laptop.classList.add("current");
+        mobile.classList.remove("current");
+      }
+    });
     function down()
     {
       let a = document.getElementById('dropdown');
